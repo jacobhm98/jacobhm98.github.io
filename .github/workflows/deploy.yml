@@ -1,13 +1,12 @@
-
 name: Deploy website to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # or 'master' depending on your setup
+      - main # or 'master' depending on your setup
 
 permissions:
-  contents: write  # required to push to gh-pages branch
+  contents: write # required to push to gh-pages branch
 
 jobs:
   build:
@@ -16,11 +15,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.146.0'  # or latest stable version
+          hugo-version: "0.146.0" # or latest stable version
           extended: true
 
       - name: Build site
