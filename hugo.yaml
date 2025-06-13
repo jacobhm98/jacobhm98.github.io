@@ -1,0 +1,20 @@
+baseURL: https://jacobhm98.com/
+languageCode: en-us
+title: Jacob Heden Malm
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+params:
+  profileMode:
+    enabled: true
+    subtitle: "Jacob's website"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/jacobhm98/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/jacob-hed%C3%A9n-malm-0b2727174/"
