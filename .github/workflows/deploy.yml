@@ -4,7 +4,7 @@ name: Deploy website to GitHub Pages
 on:
   push:
     branches:
-      - master  # or 'master' depending on your setup
+      - main  # or 'master' depending on your setup
 
 permissions:
   contents: write  # required to push to gh-pages branch
