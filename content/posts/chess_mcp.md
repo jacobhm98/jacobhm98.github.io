@@ -10,7 +10,7 @@ I recently found myself with more free time and less direction than I've had sin
 
 I spent the first week doing absolutely nothing productive. I tented for 4 days somewhere in the forest in southern Sweden while attending a techno festival, spent a combined 20 hours on trains to and from Cologne in order to attend a Denzel Curry concert with an old friend, and started reading a new book, [Growth](https://www.danielsusskind.com/growth-a-reckoning), so far so good!
 
-However, sometime between the last paycheck hitting my bank account and the epiphany that all this fun requires financing, my fingers have started itching more and more for something productive adjacent to do.
+However, sometime between the last paycheck hitting my bank account and the epiphany that all this fun requires financing, my fingers have started itching more and more for something productive-adjacent to do.
 
 ## Catching up with recent developments
 
@@ -18,7 +18,7 @@ Of course, I knew before beginning this journey that I was out of the loop w.r.t
 
 ### Vibe coding
 
-I knew that at Spotify I'd had limited opportunity to vibe code properly. When you're writing code for large, enterprise systems model context and complexity quickly become bottlenecks. Additionally, no matter how good the AI gets I suspect there's always going to be an impulse urging restraint from fully embracing the vibes when I know that the code I write will end up serving millions of paying customers. So vibe coding was something I really wanted to test out.
+At Spotify I'd had limited opportunity to vibe code properly. When you're writing code for large, enterprise systems model context and complexity quickly become bottlenecks. Additionally, no matter how good the AI gets I suspect there's always going to be an impulse urging restraint from fully embracing the vibes when I know that the code I write will end up serving millions of paying customers. So vibe coding was something I really wanted to test out.
 
 ### MCP
 
@@ -33,13 +33,13 @@ A realization I had was that the MCP is a way of giving agency to LLMs.
 
 The standard LLM is sandboxed to a chat interface. Of course, you can interact with it through an API and construct business logic for when it gets invoked and how it's responses are handled in a traditional SaaS as if it were just another service dependency.
 
-This likely works great for simpler AI based applications, you know deterministically at what point in your UX flow the LLM should be invoked, and what you want to use its data for. However, the LLM is fundamentally still 'just' text in -> text out.
+This likely works great for simpler AI based applications, you know deterministically at what point in your UX flow the LLM should be invoked, and what you want to use its answer for. However, the LLM is fundamentally still 'just' text in -> text out.
 
 If you've spent any time at all sifting through the AI circlejerk present in various unspecified internet ecosystems, you, like I, know the agentic revolution is coming.
 
 #### What is the agentic revolution?
 
-The agentic revolution is the u/dystopian vision of a near future where a team of agents can do somewhere between most and all of common knowledge worker tasks.
+The agentic revolution is the dys/utopian vision of a near future where a team of agents can do somewhere between most and all of common knowledge worker tasks.
 
 A thought experiment:
 
@@ -57,11 +57,11 @@ This is precisely what the MCP does. It allows you to give your LLM access to a 
 
 So, if you wanted to create a software engineering agent, you'd need to hook it up with an MCP server for each of the above mentioned examples in order for it to carry out all the tasks you'd expect a software engineer to carry out.
 
-Of course, given today's agents, I really doubt this is a sufficient advancement, but I do think it's a required precondition.
+Of course, given today's agents, I really doubt this is a sufficient advancement, but I do think it's a necessary precondition.
 
 ## The project
 
-Alright, so I knew I wanted to vibe code something. And I knew that the MCP is interesting, and likely to become more and more relevant as LLMs continue to develop. 1 + 1 = vibe coded MCP server.
+Alright, so I knew I wanted to vibe code something. And I knew that the MCP is interesting and likely to become more and more relevant as LLMs continue to develop. 1 + 1 = vibe coded MCP server.
 
 Doing what?
 
@@ -92,7 +92,7 @@ Again, 2 + 2 = vibe coded LLM chess MCP server.
 
 ### Building the server
 
-Honestly, this part went incredibly smoothly. I fully endorse the vibes. I downloaded claude code, created a fresh repository, and within an hour I'd prompted my way to a functional java MCP server without writing a single line of code myself, allowing me to create a game through the chat interface, and play a game with claude as my opponent on lichess. Spaghetti code is [here](https://github.com/jacobhm98/lichess-mcp), if you'd like to try it out -- though for your own sanity don't look too closely at the actual code (1k LoC file of straight ObjectNode manipulation, anyone?).
+Honestly, this part went incredibly smoothly. I fully endorse the vibes. I downloaded claude code, created a fresh repository, and within an hour I'd prompted my way to a functional Java MCP server without writing a single line of code myself, allowing me to create a game through the chat interface, and play a game with claude as my opponent on lichess. Spaghetti code is [here](https://github.com/jacobhm98/lichess-mcp), if you'd like to try it out -- though for your own sanity don't look too closely at the actual code (1k LoC file of straight ObjectNode manipulation, anyone?).
 
 ### Initial results
 
@@ -120,7 +120,7 @@ Interestingly Claude was able to attempt legal moves only, suggesting he was abl
 
 ### Relating my findings to the illusion of thinking
 
-I think my limited sample roughly supports the conclusions of apple's research team's criticisms. In a problem space of sufficient complexity where the LLMs need to rationalize their way to an out-of-training-set solution, they rapidly fall apart.
+I think my very limited sample roughly supports the conclusions of apple's research team's criticisms. In a problem space of sufficient complexity where the LLMs need to rationalize their way to an out-of-training-set solution, they rapidly fall apart.
 
 ### Relating this to the illusion of the illusion of thinking
 
@@ -149,9 +149,19 @@ However, still far off a genuinely usable engine.
 To me, theres a few learnings I gained from this project.
 
 1. MCPs are cool. They allow you to extend the toolkit of an LLM, allowing them to interact with essentially any piece of software you program it to. I think this is an area worth continuing to explore.
-2. Vibe coding is useful, but extremely limited. I saved so much time, and perhaps more importantly, mental energy by vibe coding the MCP from start to finish. It created a self contained, useable software component. However, two distinct limitations made themselves apparent. One, the code it created was an absolute abomination. You couldn't pay me to manually go in and fix any bugs claude introduced -- I'd much rather start from scratch. Two, some tasks are still much too complicated for claude to figure out completely on its own. There are open source chess engine implementations that are surely in the claude train set, however a chess engine of any capacity will be a complicated piece of software, and creating a decently capable one falls squarely outside of claude's capabilities, for now.
-3. I'm still doubtful that LLMs can actually reason. I err on the side of the apple research team in the debate, when it comes to true, logical, step-by-step reasoning I'm not super impressed, at least if you think chess is a decent proxy for this.
+2. Vibe coding is useful, but limited. I saved so much time, and perhaps more importantly, mental energy by vibe coding the MCP from start to finish. It created a self contained, useable software component. However, two distinct limitations made themselves apparent. One, the code it created was an absolute abomination. You couldn't pay me to manually go in and fix any bugs claude introduced -- I'd much rather start from scratch. Two, some tasks are still much too complicated for claude to figure out completely on its own. There are open source chess engine implementations that are surely in the claude train set, however a chess engine of any capacity will be a complicated piece of software, and creating a decently capable one falls squarely outside of claude's capabilities, for now.
+3. I'm still doubtful that LLMs can actually reason. I err on the side of the apple research team in the debate, when it comes to true, logical, step-by-step reasoning I'm not super impressed, at least if you think chess is a decent proxy.
+
+### Disclaimer
+
+Lots of people have explored this space before me, with mixed results. This wasn't meant to be an exhaustive analysis of LLM chess ability so much as a fun foray into MCPs. Though if your interest has been piqued, here's some further interesting reading:
+
+- https://dynomight.net/chess/
+- https://dynomight.net/more-chess/
+- https://dev.to/maximsaplin/can-llms-play-chess-ive-tested-13-models-2154
+
+I likely could have gotten claude to play more competently with more prompt experimenting and evaluating different model versions.
 
 ## Closing words
 
-Thanks for reading! Let me know if you have any interesting research papers you think I should read, or let me know if you constructively disagree with anything I've written here!
+Let me know if you know any research papers/articles/books you think I'd be interested in, or if you _constructively_ disagree with anything I've written here!
