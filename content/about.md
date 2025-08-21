@@ -8,4 +8,11 @@ Hello, I'm Jacob Heden Malm. I am a software engineer based out of Copenhagen. I
 
 - If you're curious, here's my [CV](https://github.com/jacobhm98/CV/blob/master/CV.pdf)
 - Here's my [github](https://github.com/jacobhm98)
-- This is what I'm currently [working on](https://github.com/sensoris/semcache)
+
+Previous projects:
+
+- [Semcache](https://github.com/sensoris/semcache)
+
+What I'm currently working on:
+
+- [Minnas](https://minnas.io)
