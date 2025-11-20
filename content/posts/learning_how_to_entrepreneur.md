@@ -1,7 +1,7 @@
 +++
 title = 'How to entrepreneur'
 date = 2025-11-20T07:20:37+01:00
-draft = true
+draft = false
 +++
 
 # How to entrepreneur
