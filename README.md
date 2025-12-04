@@ -1,1 +1,1 @@
-# jacobhm98.github.io
+jacobhm98.com
