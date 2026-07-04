@@ -127,7 +127,7 @@ Debugging outages or errors is also something I am wholly "in-the-loop" for.
 
 Similarly, foreseeing what we need to build and why is something that is critically done by humans. We need to ingest feedback, talk to users, think about world trends, and synthesize all of this into a roadmap.
 
-### What's stopping the agent from doing this?
+### What's stopping HAL?
 
 I think there are a few things I have going for me.
 
@@ -139,23 +139,23 @@ An agent, given a specific context, is more or less a deterministic machine. Tha
 
 This means they never build up "understanding" for the code base they are working on, or the business and people they are producing code for. They have gotten extremely good at mimicking this understanding for scoped tasks by intelligently enriching their contexts autonomously, but they still need someone to give them scoped tasks!
 
-I also think there's a level of wisdom/intelligence they lack. This to me, is apparent when debugging. Unless it's a simple problem where the error message contains a smoking gun, and a simple grep points the agent to where the problem is occurring, I have found that the agent often jumps at the first plausible answer it sees. It takes a human in the loop with understanding of the problem domain to see that this is impossibly the right answer and then course correct.
+I also think there's a level of wisdom/intelligence they lack. This to me, is apparent when debugging. Unless it's a simple problem where the error message contains a smoking gun, and a simple grep points the agent to where the problem is occurring, I have found that the agent often jumps at the first plausible answer it sees. It takes a human in the loop with understanding of the problem domain to see that this can't possibly be the right answer and then course correct.
 
 Don't get me wrong, I am tremendously reliant on agents when debugging. But I instruct it specifically what data to pull, what hypothesis to verify and how, and will ask questions to poke holes in its reasoning until I am content. I also always ask it to present me with means of verifying the conclusion.
 
 To me, this is further evidence of the lack of long-term understanding that is necessary for software engineering.
 
-## The good
+## Still worth loving
 
 The benefit is, if you embrace this new way of working, use the agent as a tool rather than as an intern, and build up an intuition for where your experience and skill is necessary, you can still spend most of your time solving interesting problems.
 
-In fact, if you embrace the new, higher, level of abstraction that an agent affords you to work at, you will be able to solve a much wider array of problems, quicker. Not having to worry about semantics or the syntax of specific cli commands allows you to work at a rate more closely approximating the speed of thought. It's almost like learning how to touch type.
+In fact, if you embrace the new, higher level of abstraction that an agent affords you to work at, you will be able to solve a much wider array of problems, quicker. Not having to worry about semantics or the syntax of specific CLI commands allows you to work at a rate more closely approximating the speed of thought. It's almost like learning how to touch type.
 
 The other, obvious benefit, the reason a lot of us got into this in the first place, is that you will be able to deliver useful software much more rapidly than in the past.
 
 I want to caveat this by saying that I am working on a startup with 2 other people. This means that there's exceptionally little in the way of bureaucracy or process, and most of my time is spent building, shipping, fixing, and improving software. For various reasons, most of them valid, this would not be the case at an established company.
 
-With that said, if I take a typical "jira ticket sized" task (create a new API handler with wiring for a specific set of resources, for example), previously I'd probably get through one in about 5 hours of heads-down work.
+With that said, if I take a typical "Jira-ticket-sized" task (create a new API handler with wiring for a specific set of resources, for example), previously I'd probably get through one in about 5 hours of heads-down work.
 
 Currently, the end to end agent workflow would probably take 2 hours. This includes all 3 stages from before, planning, independent implementation and verification, and manual review + deploy by me.
 
@@ -163,7 +163,7 @@ If I were just working sequentially, this would be a reduction in time by a fact
 
 The key insight however, is that I am able to run ~4 of these tasks in parallel. This makes me a ~10x engineer compared to my previous self.
 
-## The implication for the future
+## Where this leaves us
 
 All this to say, I see the current crop of agents as an immensely powerful _tool_ to be wielded in the arsenal of a competent human software engineer.
 
